@@ -1,6 +1,8 @@
 EXPO LINK : https://snack.expo.dev/@213group/bookmarks---project
+#BookMarks 
+An app to search for books and save them to read later
 
-# Objective:
+Objective:
 The goal of our application is to create a mobile-designed book-searching interface. We want the user to open our app and see a list of the current new-york-times best-sellers. From this home page, the user can search for any book by either the book’s title or the author’s name. The search will return the first 10-20 books found in a separate API. 
 
 When selecting a book, a dedicated display of the book’s cover image, title, author, pub date, etc should be visible. A button to add the book to the favourites tab will be available for the user. We may try implementing a method of favouriting a book without having to inspect it.
