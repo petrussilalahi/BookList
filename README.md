@@ -1,4 +1,4 @@
-# EXPO LINK : https://snack.expo.dev/@213group/bookmarks---project
+EXPO LINK : https://snack.expo.dev/@213group/bookmarks---project
 
 # Objective:
 The goal of our application is to create a mobile-designed book-searching interface. We want the user to open our app and see a list of the current new-york-times best-sellers. From this home page, the user can search for any book by either the book’s title or the author’s name. The search will return the first 10-20 books found in a separate API. 
@@ -29,3 +29,5 @@ History (Search, viewed, etc)
 Target Audience:
 Reading enthusiasts and the general public
 The design should aim to be simple enough for a child to use.
+
+
