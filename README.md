@@ -1,7 +1,7 @@
 EXPO LINK : https://snack.expo.dev/@213group/bookmarks---project
 
 # BookMarks 
-
+![image](https://github.com/Hena1234/ReactNative_project-expo-/assets/93799006/af28db62-8f81-4195-b88b-21198ed85b81)
 
 An app to search for books and save them to read later
 
@@ -18,16 +18,23 @@ Also tied to your account should be both your search history and previously view
 Platform:
 Designed for Android and IOS, Android priority.
 
-APIs: https://api.nytimes.com/svc/books/v3/lists/hardcover-fiction?response-format=json&api-key=yYyHlpxh9hNIObhzKkBH4eirfaqEW3QW
-
-https://www.googleapis.com/books/v1/volumes?q=9780743273565+isbn&maxResults=1
+APIs: 
+1.https://api.nytimes.com/svc/books/v3/lists/hardcover-fiction?response-format=json&api-key=yYyHlpxh9hNIObhzKkBH4eirfaqEW3QW
+2.https://www.googleapis.com/books/v1/volumes?q=9780743273565+isbn&maxResults=1
 
 
 Directories/Nav:
 Best Seller List
+
+
+
 Search for Books (maybe also authors)
-Register page/Login?
+
+
+Register page/Login
+
 Favourites tab
+
 History (Search, viewed, etc)
 
 
