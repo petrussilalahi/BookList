@@ -41,14 +41,14 @@ export default function HomeScreen({ navigation }) {
       });
   }, []);
 
-  const renderItem = ({ item }) => {
+  const renderItem = ({ item, idx }) => {
     const image = item.book_image;
     const title = item.title;
     const author = item.author;
     const desc = item.description;
 
     return (
-      <View style={styles.boxView}>
+      <View style={styles.boxView} key={idx}>
         <Image
           source={{ uri: image }}
           style={{ width: 160, height: 240, borderRadius: 4 }}

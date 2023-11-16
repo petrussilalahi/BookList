@@ -23,11 +23,11 @@ function FavList({ navigation, fav_books, UnfavBook }) {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Text style={{ fontSize: 25, fontWeight: 'bold', margin: 5 }}>
-          Favourite Books
-        </Text>
-   
-        <View style={styles.boxView}>
+        {
+          fav_books.length == 0 ?
+          <View style={{justifyContent:'center', marginVertical: 10, alignItems:'center'}}> 
+            <Text style={{ fontSize: 20, fontWeight: 'bold',}}>No Favourite Books</Text>
+          </View> : <View style={styles.boxView}>
           {fav_books?.map((x) => (
             
             <View>
@@ -89,6 +89,9 @@ function FavList({ navigation, fav_books, UnfavBook }) {
             </View>
           ))}
         </View>
+        }
+   
+        
       </ScrollView>
     </SafeAreaView>
   );

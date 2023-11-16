@@ -115,7 +115,7 @@ function SearchBook({ navigation, SaveSearch }) {
           placeholder="Enter keyword"
           value={key}
           onChangeText={setKeyword}
-          maxLength="25"></TextInput>
+          maxLength={25}/>
       </View>
 
       <TouchableHighlight

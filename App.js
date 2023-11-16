@@ -58,9 +58,6 @@ export default function App() {
           <Tab.Screen name="Search" component={SearchBook} />
           <Tab.Screen name="Favourites" component={FavIndex} />
           <Tab.Screen name="History" component={History} />
-          <Tab.Screen name="ProfileCover" component={ProfileCover} options={{ headerShown: false }}/>
-          <Tab.Screen name="Profile" component={Profile} options={{ tabBarButton: (props) => null }}/>
-          <Tab.Screen name="Sign Up" component={SignUp} options={{ tabBarButton: (props) => null }}/>
           <Tab.Screen name="Book" component={Book} options={{ tabBarButton: (props) => null }}/>
         </Tab.Navigator>
       </NavigationContainer>
