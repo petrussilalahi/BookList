@@ -53,7 +53,7 @@ export default function App() {
           <Tab.Screen
             name="Home"
             component={HomeScreen}
-            options={{ headerShown: false }}
+            options={{ headerShown: true }}
           />
           <Tab.Screen name="Search" component={SearchBook} />
           <Tab.Screen name="Favourites" component={FavIndex} />

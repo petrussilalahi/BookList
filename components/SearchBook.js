@@ -54,9 +54,11 @@ function SearchBook({ navigation, SaveSearch }) {
               <Text style={{ fontSize: 15, fontWeight: 'bold' }}>
                 {item.volumeInfo.title}
               </Text>
-              <Text style={{ fontSize: 15, fontStyle: 'italic' }}>
+              {
+                item.volumeInfo.subtitle != null ? ( <Text style={{ fontSize: 15, fontStyle: 'italic' }}>
                 {item.volumeInfo.subtitle}
-              </Text>
+              </Text>) : null
+              }
               <Text> </Text>
               <Text> Author: {item.volumeInfo.authors}</Text>
               <Text> Publisher: {item.volumeInfo.publisher}</Text>

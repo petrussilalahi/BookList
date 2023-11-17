@@ -51,13 +51,12 @@ export default function HomeScreen({ navigation }) {
       <View style={styles.boxView} key={idx}>
         <Image
           source={{ uri: image }}
-          style={{ width: 160, height: 240, borderRadius: 4 }}
+          style={{ width: 100, height: 100, borderRadius: 4, objectFit:'contain' }}
         />
         <Text
           style={{
             fontSize: 17,
             fontWeight: 'bold',
-            marginBottom: 4,
           }}>
           {title}
         </Text>
@@ -76,49 +75,31 @@ export default function HomeScreen({ navigation }) {
   };
 
   return (
-    <ScrollView>
     <View style={styles.container}>
-    <Animated.View
-    style={{opacity: fadeAnim}}
-    >
-      <Image
-        source={{
-          uri: 'https://cdn.dribbble.com/users/604891/screenshots/16581214/media/bb111973c18ec6b36a067efdecc9a8ff.gif',
-        }}
-        style={{ width: 200, height: 200 }}
-      />
-      </Animated.View>
-      <View></View>
-      <Text style={styles.text}>Best Sellers</Text>
-      <ActivityIndicator color="purple" size={30} animating={indicator} />
       <FlatList
         data={data}
         renderItem={renderItem}
-        horizontal={true}
         keyExtractor={(item) => item.author}
         ItemSeparatorComponent={() => (
           <View style={{ marginBottom: 20, margin: 20 , marginTop:5,}} />
         )}
+        numColumns={2}
       />
     </View>
-    </ScrollView>
   );
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 16,
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#FDFDFC',
-    padding: 8,
+    backgroundColor: 'white',
   },
   boxView: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 0,
-    marginBottom: 0,
-    padding: 0,
+    flex: 1,
+    flexDirection: 'column',
+    margin: 1
   },
   text: {
     alignItems: 'stretch',
